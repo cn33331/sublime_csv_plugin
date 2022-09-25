@@ -4,6 +4,8 @@ Better Reading csv
 
 只需要把文件`csv-viw`放到sublime txt软件的Packages下即可使用
 
+example：`cp -r ./csv-view /Users/mac/Library/Application\ Support/Sublime\ Text/Packages `
+
 # 文件
 
 * `csv-view.sublime-commands`
