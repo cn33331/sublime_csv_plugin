@@ -1,6 +1,8 @@
 # sublime_csv_plugin
 Better Reading csv
-把文件放到sublime txt软件的Packages下即可使用
+
+
+只需要把文件`csv-viw`放到sublime txt软件的Packages下即可使用
 
 # 文件
 
