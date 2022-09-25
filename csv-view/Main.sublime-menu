@@ -1,0 +1,27 @@
+[
+{
+    "id": "my_menu",
+    "caption": "plugins",
+    "children":
+    [
+        {
+            "id": "menu1",
+            "caption": "read-csv-view",
+            "command": "read_csv_view"
+        },
+
+        {
+            "id": "menu2",
+            "caption": "read-csv-local",
+            "command": "read_csv_local"
+        }, 
+
+        {
+            "id": "menu3",
+            "caption": "return-csv",
+            "command": "return_csv"
+        },      
+
+    ]
+}
+]

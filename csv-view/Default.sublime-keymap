@@ -1,0 +1,14 @@
+[
+	{ 
+		"keys": ["alt+t"], 
+		"command": "read_csv_view" 
+	},
+	{ 
+		"keys": ["alt+z"], 
+		"command": "read_csv_local" 
+	},
+	{ 
+		"keys": ["alt+x"], 
+		"command": "return_csv" 
+	},
+]

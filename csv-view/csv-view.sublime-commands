@@ -1,0 +1,14 @@
+[
+	{
+        "command": "read_csv_view",
+        "caption": "CYG : CSV Record View"
+    },
+    {
+        "command": "read_csv_local",
+        "caption": "CYG : CSV Record Local"
+    },
+    {
+        "command": "return_csv",
+        "caption": "CYG : Return  right csv "
+    },
+]
