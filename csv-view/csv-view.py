@@ -126,7 +126,7 @@ class ReturnCsvCommand(sublime_plugin.TextCommand):
         data = self.view.substr(csvall)
 
         rowstr1 = ""
-        f = open(file_path, "w")
+        f = open('2.csv', 'w+')
         csv_file = csv.writer(f)
 
         for f_csv in data:
@@ -143,8 +143,10 @@ class ReturnCsvCommand(sublime_plugin.TextCommand):
                 rowstr1 = ""
                 csv_file.writerow(tab)
 
-        # print(data)
+        f.seek(0)
+        csvallstr = f.read()
+        print(csvallstr)
         # syntax_path = '/Users/mac/Library/Application/Sublime \
         # Text/Packages/rainbow_csv/pregenerated_grammars/CSV (Rainbow).sublime-syntax'
         # self.view.set_syntax_file(syntax_path)
-        # self.view.replace(edit, csvall, data)
+        self.view.replace(edit, csvall, csvallstr)
