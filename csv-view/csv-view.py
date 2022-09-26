@@ -134,11 +134,11 @@ class ReturnCsvCommand(sublime_plugin.TextCommand):
                 rowstr1 = rowstr1+f_csv
             else:
                 strinfo = re . compile('｜   ｜')
-                rowstr1 = strinfo.sub('-', rowstr1)
+                rowstr1 = strinfo.sub('---', rowstr1)
                 strinfo1 = re . compile(' ')
                 rowstr1 = strinfo1.sub('', rowstr1)
                 # print(rowstr1)
-                tab = re.split("-", rowstr1)
+                tab = re.split("---", rowstr1)
                 print(tab)
                 rowstr1 = ""
                 csv_file.writerow(tab)
