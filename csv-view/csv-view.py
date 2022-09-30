@@ -139,9 +139,12 @@ class ReturnCsvCommand(sublime_plugin.TextCommand):
                 rowstr1 = strinfo1.sub('', rowstr1)
                 # print(rowstr1)
                 tab = re.split("---", rowstr1)
-                print(tab)
                 rowstr1 = ""
-                csv_file.writerow(tab)
+                
+                if tab[0] == "" and len(tab) == 1:
+                    f.write("\n")
+                else:
+                    csv_file.writerow(tab)
 
         f.seek(0)
         csvallstr = f.read()
