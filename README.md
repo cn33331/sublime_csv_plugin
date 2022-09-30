@@ -45,4 +45,5 @@ example：`cp -r ./csv-view /Users/mac/Library/Application\ Support/Sublime\ Tex
 # 使用
 
 ![](./csv-view/tme/1.gif)
+![](./csv-view/tme/2.gif)
 
