@@ -13,8 +13,9 @@ class ReadCsvViewCommand(sublime_plugin.TextCommand):
         selection = (selection if self.view.substr(selection)
                      else sublime.Region(0, self.view.size()))
 
-        rawdata = self.view.substr(selection)
-
+        b = self.view.substr(selection)
+        strinfo = re.compile('‰')
+        rawdata = strinfo.sub('l_l', b)
         # 将视图的内容转化成便于观看的形式，调整格式
         # rawdata->str2
         f = open('2.csv', 'w')
@@ -140,7 +141,7 @@ class ReturnCsvCommand(sublime_plugin.TextCommand):
                 # print(rowstr1)
                 tab = re.split("---", rowstr1)
                 rowstr1 = ""
-                
+
                 if tab[0] == "" and len(tab) == 1:
                     f.write("\n")
                 else:
