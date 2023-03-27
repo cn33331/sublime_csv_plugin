@@ -22,7 +22,7 @@ example：`cp -r ./csv-view /Users/mac/Library/Application\ Support/Sublime\ Tex
 
   设置插件功能在sublim上方菜单栏出现
 
-以上三个文件可任意保留
+以上三个文件可任意保留，至少保留一个文件
 
 * `csv-view.py`
 
