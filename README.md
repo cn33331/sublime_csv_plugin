@@ -6,6 +6,8 @@ Better Reading csv
 
 example：`cp -r ./csv-view /Users/mac/Library/Application\ Support/Sublime\ Text/Packages `
 
+or:`cp -r ./csv-view ~/Library/Application\ Support/Sublime\ Text/Packages `
+
 不支持**中文字符**
 
 # 文件
